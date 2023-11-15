@@ -1,0 +1,42 @@
+.newsletter {
+    background: linear-gradient(180deg, #fde, #b9b9b9 70%);
+    padding: 70px 0;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 38px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+    p {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    &__subscribe {
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+    input {
+        padding: 0 20px;
+        background: transparent;
+        border: none;
+        outline: none;
+    };
+    button {
+        background-color: black;
+        color: #fde;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(50, 50, 50);
+        }
+        &:active {
+            background-color: rgb(80, 80, 80);
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    > * {
+        display: flex;
+        align-items: center;
+        a {
+            text-decoration: none;
+        }
+    }
+    &__logo {
+        font-size: 40px;
+        font-weight: 900;
+        cursor: pointer;
+        & span {
+            vertical-align: super;
+        }
+    }
+    &__menu {
+        list-style-type: none;
+        gap: 20px;
+        font-size: 25px;
+        & hr {
+            border: none;
+            width: 100%;
+            height: 3px;
+            border-radius: 10px;
+            background: #000;
+        }
+        & li {
+            padding: 5px 15px;
+            cursor: pointer;
+            // &:hover {}
+        }
+    }
+    &__login {
+        gap: 50px;
+        & button {
+            border: 1px solid #7a7a7a;
+            background: none;
+            border-radius: 25px;
+            padding: 10px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            &:hover {
+                color: #fff;
+                background: #7a7a7a;
+            }
+            &:active {
+                background: #494949;
+            }
+        }
+        & img{ 
+            cursor: pointer;
+        }
+    }
+    &__counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: red;
+        color: #fff; 
+        margin-left: -60px;
+        margin-top: -40px;
+    }
+}

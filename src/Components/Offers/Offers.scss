@@ -1,0 +1,37 @@
+.offers {
+    background: linear-gradient(180deg, #fde, #b9b9b9 70%);
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        h1 {
+            font-size: 70px;
+            font-weight: 400;
+            line-height: 50px;
+        }
+        p {
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+        button {
+            width: 270px;
+            font-size: 22px;
+            background: red;
+            padding: 20px 0;
+            border: none;
+            border-radius: 35px;
+            color: rgb(255, 245, 250);
+            &:hover {
+                cursor: pointer;
+                background: rgb(175, 0, 0);
+                transition: 0.5s;
+            }
+        }
+    }
+}

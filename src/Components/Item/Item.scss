@@ -1,0 +1,32 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    img {
+        display: block;
+        width: 100%;
+    }
+    p {
+        padding: 10px 20px;
+    }
+    &-prices {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        &__old {
+            color: #8c8c8c;
+            font-size: 18px;
+            margin-left: -60px;
+            text-decoration: line-through;
+        }
+        &__new {
+            color: #252525;
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+}
